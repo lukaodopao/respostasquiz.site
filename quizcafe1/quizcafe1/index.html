@@ -1,0 +1,418 @@
+<!DOCTYPE html><html lang="pt-br"><!-- Mirrored from c-acaushow.online/quiz/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 12 Mar 2024 04:11:36 GMT --><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/gLwgYuNeL1ZP.css">
+    <link rel="stylesheet" href="css/2O3LUllnFfW7.css">
+    <link rel="stylesheet" href="css/W6FBnwDKqu3l.css">
+    <script src="js/uTg6CdcqB3Og.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="images/iGwVxtrpgXzn.png" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/iGwVxtrpgXzn.png">
+    <script src="js/EhZJV9yvBt9x.js"></script>
+    <title>Questionário 3 Corações</title>
+  </head>
+  <body>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Obtém os parâmetros da URL atual
+    let currentParams = new URLSearchParams(window.location.search);
+
+    // Verifica se há parâmetros UTM na URL atual e os salva no localStorage
+    if (currentParams.has('utm_source')) {
+        localStorage.setItem('utmParams', JSON.stringify(Object.fromEntries(currentParams.entries())));
+    }
+
+    // Captura todos os links na página
+    const links = document.querySelectorAll('a');
+
+    // Adiciona um ouvinte de eventos a cada link
+    links.forEach(link => {
+        link.addEventListener('click', function(event) {
+            // Previne o comportamento padrão do link
+            event.preventDefault();
+
+            // Obtém a URL de destino do atributo href do link
+            let destinationUrl = this.getAttribute('href');
+
+            // Cria um objeto URL para a URL de destino, resolvendo-a em relação à URL atual
+            let url = new URL(destinationUrl, window.location.href);
+
+            // Obtém os parâmetros da URL atual
+            let currentParams = new URLSearchParams(window.location.search);
+
+            // Verifica se já existem parâmetros UTM no localStorage
+            let storedParams = localStorage.getItem('utmParams');
+            if (storedParams) {
+                // Se existirem, adiciona-os à URL de destino
+                let storedParamsObj = JSON.parse(storedParams);
+                for (let [key, value] of Object.entries(storedParamsObj)) {
+                    url.searchParams.append(key, value);
+                }
+            } else {
+                // Se não existirem, adiciona os parâmetros da URL atual à URL de destino
+                for (let [key, value] of currentParams.entries()) {
+                    url.searchParams.append(key, value);
+                }
+
+                // Salva os parâmetros UTM no localStorage
+                localStorage.setItem('utmParams', JSON.stringify(Object.fromEntries(currentParams.entries())));
+            }
+
+            // Redireciona para a nova URL com os parâmetros UTM adicionados
+            window.location.href = url.toString();
+        });
+    });
+});
+
+</script>
+    <header>
+      <i class="fa-solid fa-bars" style="color: white"></i>
+      <!-- <img src="assets/images/google_logo.svg" alt=""> -->
+      <img src="images/VZtXmvxi63RU.png" alt="">
+      <span id="saldo" style="margin-left: auto"></span>
+    </header>
+    <main>
+      <div class="card pergunta01" id="pergunta01">
+        <div class="card__logo">
+          <img src="images/nP8CpkzITUgu.jpg" alt="">
+        </div>
+        <div class="card__satisfacao">
+          <h2>De 0 a 5, como você avaliaria sua familiaridade com a Três Corações?</h2>
+          <div class="card__gradeContainer">
+            <div class="card__grade" id="card__grade1" onclick="toggleCard(this)">
+              <i class="fa-regular fa-star" id="star1"></i>
+            </div>
+            <div class="card__grade" id="card__grade2" onclick="toggleCard(this)">
+              <i class="fa-regular fa-star" id="star2"></i>
+            </div>
+            <div class="card__grade" id="card__grade3" onclick="toggleCard(this)">
+              <i class="fa-regular fa-star" id="star3"></i>
+            </div>
+            <div class="card__grade" id="card__grade4" onclick="toggleCard(this)">
+              <i class="fa-regular fa-star" id="star4"></i>
+            </div>
+            <div class="card__grade" id="card__grade5" onclick="toggleCard(this)">
+              <i class="fa-regular fa-star" id="star5"></i>
+            </div>
+          </div>
+          <div class="card__gradeDescricao">
+            <p>Muito ruim</p>
+            <p>Muito bom</p>
+          </div>
+        </div>
+        <div class="card__resposta">
+          <h2>
+            Você já experimentou algum desses produtos ou já conhece algum deles?
+          </h2>
+          <div class="resposta__gradeContainer">
+            <div class="resposta__grade resposta1" onclick="toggleResponse(this, 'resposta1')">
+              <p onclick="scrollToDown()">Café em Cápsula</p>
+            </div>
+            <div class="resposta__grade resposta1" onclick="toggleResponse(this, 'resposta1')">
+              <p onclick="scrollToDown()">Cappuccinos</p>
+            </div>
+
+            <div class="resposta__grade resposta1" onclick="toggleResponse(this, 'resposta1')">
+            <p onclick="scrollToDown()">Café Gourmet</p>
+          </div>
+
+          <div class="resposta__grade resposta1" onclick="toggleResponse(this, 'resposta1')">
+          <p onclick="scrollToDown()">Café Solúvel</p>
+        </div>
+        <div class="resposta__grade resposta1" onclick="toggleResponse(this, 'resposta1')">
+            <p onclick="scrollToDown()">Drip Coffee</p>
+        </div>
+
+        <div class="resposta__grade resposta1" onclick="toggleResponse(this, 'resposta1')">
+          <p onclick="scrollToDown()">Café Torrado e Moído</p>
+      </div>
+
+
+          </div>
+        </div>
+  
+        <button class="card__enviarResposta" id="enviarResposta" onclick="pergunta01()" disabled="">
+          Enviar avaliação
+        </button>
+      </div>
+      <div class="card pergunta02" id="pergunta02" style="display: none">
+        <div class="card__logo">
+          <img src="images/M1mfGde1ePak.jpg" alt="">
+        </div>
+        <div class="card__satisfacao">
+          <h2>
+            De 0 a 5, como você avaliaria a qualidade dos produtos da Três Corações que já experimentou?
+          </h2>
+          <div class="card__gradeContainer">
+            <div class="card__grade" id="card__grade1" onclick="toggleCard(this)">
+              <i class="fa-regular fa-star" id="star1"></i>
+            </div>
+            <div class="card__grade" id="card__grade2" onclick="toggleCard(this)">
+              <i class="fa-regular fa-star" id="star2"></i>
+            </div>
+            <div class="card__grade" id="card__grade3" onclick="toggleCard(this)">
+              <i class="fa-regular fa-star" id="star3"></i>
+            </div>
+            <div class="card__grade" id="card__grade4" onclick="toggleCard(this)">
+              <i class="fa-regular fa-star" id="star4"></i>
+            </div>
+            <div class="card__grade" id="card__grade5" onclick="toggleCard(this)">
+              <i class="fa-regular fa-star" id="star5"></i>
+            </div>
+          </div>
+          <div class="card__gradeDescricao">
+            <p>Muito ruim</p>
+            <p>Muito bom</p>
+          </div>
+        </div>
+        <div class="card__resposta">
+          <h2>
+            Você notou alguma melhora na qualidade e no sabor após começar a utilizar os produtos da Três Corações?
+          </h2>
+          <div class="resposta__gradeContainer">
+            <div class="resposta__grade resposta1" onclick="toggleResponse(this, 'resposta1')">
+              <p onclick="scrollToDown()">Sim, significativamente</p>
+            </div>
+            <div class="resposta__grade resposta1" onclick="toggleResponse(this, 'resposta1')">
+              <p onclick="scrollToDown()">Não, não percebi melhorias notáveis</p>
+            </div>
+          </div>
+        </div>
+        <button class="card__enviarResposta" id="enviarResposta" onclick="pergunta02()" disabled="">
+          Enviar avaliação
+        </button>
+      </div>
+
+      <div class="card pergunta03" id="pergunta03" style="display: none">
+        <div class="card__logo">
+          <img src="images/TWnVyT7Dyjfy.jpg" alt="">
+        </div>
+        <div class="card__satisfacao">
+          <h2>De 0 a 5. Os produtos da Três Corações atenderam &nbsp;s suas expectativas?</h2>
+          <div class="card__gradeContainer">
+            <div class="card__grade" id="card__grade1" onclick="toggleCard(this)">
+              <i class="fa-regular fa-star" id="star1"></i>
+            </div>
+            <div class="card__grade" id="card__grade2" onclick="toggleCard(this)">
+              <i class="fa-regular fa-star" id="star2"></i>
+            </div>
+            <div class="card__grade" id="card__grade3" onclick="toggleCard(this)">
+              <i class="fa-regular fa-star" id="star3"></i>
+            </div>
+            <div class="card__grade" id="card__grade4" onclick="toggleCard(this)">
+              <i class="fa-regular fa-star" id="star4"></i>
+            </div>
+            <div class="card__grade" id="card__grade5" onclick="toggleCard(this)">
+              <i class="fa-regular fa-star" id="star5"></i>
+            </div>
+          </div>
+          <div class="card__gradeDescricao">
+            <p>Muito ruim</p>
+            <p>Muito bom</p>
+          </div>
+        </div>
+        <div class="card__resposta">
+          <h2>Como você avalia a qualidade e a sensação de utilizar os produtos da Três Corações?</h2>
+          <div class="resposta__gradeContainer">
+            <div class="resposta__grade resposta1" onclick="toggleResponse(this, 'resposta1')">
+              <p onclick="scrollToDown()">Desagradável</p>
+            </div>
+            <div class="resposta__grade resposta1" onclick="toggleResponse(this, 'resposta1')">
+              <p onclick="scrollToDown()">Neutro</p>
+            </div>
+
+            <div class="resposta__grade resposta1" onclick="toggleResponse(this, 'resposta1')">
+              <p onclick="scrollToDown()">Agradável</p>
+            </div>
+
+          </div>
+        </div>
+        <button class="card__enviarResposta" id="enviarResposta" onclick="pergunta03()" disabled="">
+          Enviar avaliação
+        </button>
+      </div>
+
+      <div class="card pergunta04" id="pergunta04" style="display: none">
+        <div class="card__logo">
+          <img src="images/c4fQGk63a0VI.jpg" alt="">
+        </div>
+        <div class="card__satisfacao">
+          <h2>De 0 a 5, Quanto você recomendaria os produtos da Três Corações?</h2>
+          <div class="card__gradeContainer">
+            <div class="card__grade" id="card__grade1" onclick="toggleCard(this)">
+              <i class="fa-regular fa-star" id="star1"></i>
+            </div>
+            <div class="card__grade" id="card__grade2" onclick="toggleCard(this)">
+              <i class="fa-regular fa-star" id="star2"></i>
+            </div>
+            <div class="card__grade" id="card__grade3" onclick="toggleCard(this)">
+              <i class="fa-regular fa-star" id="star3"></i>
+            </div>
+            <div class="card__grade" id="card__grade4" onclick="toggleCard(this)">
+              <i class="fa-regular fa-star" id="star4"></i>
+            </div>
+            <div class="card__grade" id="card__grade5" onclick="toggleCard(this)">
+              <i class="fa-regular fa-star" id="star5"></i>
+            </div>
+          </div>
+          <div class="card__gradeDescricao">
+            <p>Muito ruim</p>
+            <p>Muito bom</p>
+          </div>
+        </div>
+        <div class="card__resposta">
+          <h2>O que você espera da Três Corações no futuro?</h2>
+          <div class="resposta__gradeContainer">
+            <div class="resposta__grade resposta1" onclick="toggleResponse(this, 'resposta1')">
+              <p onclick="scrollToDown()">Mais lojas e acessibilidade</p>
+            </div>
+            <div class="resposta__grade resposta1" onclick="toggleResponse(this, 'resposta1')">
+              <p onclick="scrollToDown()">Novas parcerias e linhas temáticas exclusivas</p>
+            </div>
+          </div>
+        </div>
+        <button class="card__enviarResposta" id="enviarResposta" onclick="pergunta04()" disabled="">
+          Enviar avaliação
+        </button>
+      </div>
+
+      <div class="card pergunta05" id="pergunta05" style="display: none">
+        <div class="card__logo">
+          <img src="assets/images/cacau5.png" alt="">
+        </div>
+        <div class="card__satisfacao">
+          <h2>
+            De 0 a 5, quão entusiasmado(a) você estaria por novos produtos inovadores da Cacau Show?
+          </h2>
+          <div class="card__gradeContainer">
+            <div class="card__grade" id="card__grade1" onclick="toggleCard(this)">
+              <i class="fa-regular fa-star" id="star1"></i>
+            </div>
+            <div class="card__grade" id="card__grade2" onclick="toggleCard(this)">
+              <i class="fa-regular fa-star" id="star2"></i>
+            </div>
+            <div class="card__grade" id="card__grade3" onclick="toggleCard(this)">
+              <i class="fa-regular fa-star" id="star3"></i>
+            </div>
+            <div class="card__grade" id="card__grade4" onclick="toggleCard(this)">
+              <i class="fa-regular fa-star" id="star4"></i>
+            </div>
+            <div class="card__grade" id="card__grade5" onclick="toggleCard(this)">
+              <i class="fa-regular fa-star" id="star5"></i>
+            </div>
+          </div>
+          <div class="card__gradeDescricao">
+            <p>Muito ruim</p>
+            <p>Muito bom</p>
+          </div>
+        </div>
+        <div class="card__resposta">
+          <h2>
+            Se você pudesse criar um novo produto para a Cacau Show, ele seria:
+          </h2>
+          <div class="resposta__gradeContainer">
+            <div class="resposta__grade resposta1" onclick="toggleResponse(this, 'resposta1')">
+              <p onclick="scrollToDown()">Uma linha de chocolates inspirados em destinos exóticos</p>
+            </div>
+            <div class="resposta__grade resposta1" onclick="toggleResponse(this, 'resposta1')">
+              <p onclick="scrollToDown()">Uma coleção de chocolates dos Ursinhos Carinhosos</p>
+            </div>
+          </div>
+        </div>
+        <div class="card__resposta">
+          <h2>O que você espera da Cacau Show no futuro?</h2>
+          <div class="resposta__gradeContainer">
+            <div class="resposta__grade resposta2" onclick="toggleResponse(this, 'resposta2')">
+              <p>Mais lojas e acessibilidade</p>
+            </div>
+            <div class="resposta__grade resposta2" onclick="toggleResponse(this, 'resposta2')">
+              <p>Novas parcerias e linhas temáticas exclusivas</p>
+            </div>
+          </div>
+        </div>
+        <button class="card__enviarResposta" id="enviarResposta" onclick="pergunta05()" disabled="">
+          Enviar avaliação
+        </button>
+      </div>
+      <div class="card finalizacao" id="finalizacao" style="display: none">
+        <div class="finalizacao__titulo">
+          <h1 style="color: rgb(254, 92, 22);">PARABÉNS!</h1>
+        </div>
+        <div class="finalizacao__trofeu">
+          <img src="images/LKO0RCiUQBKm.jpg" alt="">
+        </div>
+        <div class="finalizacao__descricao">
+          <p>
+            Parabéns por concluir nossa avaliação da Três Corações! Como agradecimento, você ganhou uma <b>Máquina de Café em Cápsulas</b> exclusiva do <b>Mês Mundial do Café!</b> Apenas 100 máquinas foram disponibilizadas, verifique a disponibilidade. 
+            Apenas Clique no botão <b>RESGATAR</b> abaixo para resgatar seu prêmio.
+          </p>
+          <p>
+            Esperamos que aproveite os produtos e que eles tragam ainda mais alegria para o seu dia a dia.<br><br>Com carinho, <br>Equipe Três Corações.
+          </p>
+        </div>
+        <div class="finalizacao__botao">
+          <a href="../lojacafe1/index.html"><button><i class="fa-solid fa-gift"></i>  RESGATAR</button></a>
+        </div>
+      </div>
+
+      <button data-bs-toggle="modal" data-bs-target="#modal01" id="popup" style="display: none"></button>
+
+      <div class="modal" tabindex="-1" id="modal01">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="card apresentacao">
+              <h2>
+                ☕ Questionário Exclusivo 3 Corações! ☕
+              </h2>
+              <p>
+                Bem-vindo(a) ao nosso evento especial! Aqui na 3 Corações, queremos celebrar toda tecnologia e praticidade para oferecer a melhor experiência de extração de bebidas em cápsulas ao simples toque de um botão. Junte-se a nós nesta jornada de descobertas e, ao final, ganhe uma Super Cafeteira 3 Corações!
+                <strong>Pronto para começar?</strong>
+              </p>
+              <button type="button" data-bs-dismiss="modal">COMEÇAR</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/uEnRmF3VWQ3N.js"></script>
+    <script src="js/nGGwUchY5m3S.js"></script>
+    <script src="js/pZkZtQSoEWXk.js"></script>
+    <script src="js/L1vrUHqDKh5m.js"></script>
+    <script src="js/3gqEhC2fyhlk.js"></script>
+    <script src="js/MEKK7VdNCWiF.js"></script>
+    <script>
+      $(document).ready(function () {
+        let data = new Date();
+
+        var date = data.getDate();
+        var month = [
+          "Janeiro",
+          "Fevereiro",
+          "Março",
+          "Abril",
+          "Maio",
+          "Junho",
+          "Julho",
+          "Agosto",
+          "Setembro",
+          "Outubro",
+          "Novembro",
+          "Dezembro",
+        ][data.getMonth()];
+        var year = data.getFullYear();
+
+        $("#todayDate").html(`${date} de ${month} de ${year}**`);
+      });
+    </script>
+    <script type="text/javascript" src="js/pPUvT0kDY8Np.js"></script>
+
+    <script>
+      var popup = document.getElementById("popup");
+
+      document.addEventListener("DOMContentLoaded", function () {
+        popup.click();
+      });
+    </script>
+
+
+</body><!-- Mirrored from c-acaushow.online/quiz/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 12 Mar 2024 04:11:56 GMT --></html>
