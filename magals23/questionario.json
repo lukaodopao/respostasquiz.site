@@ -1,0 +1,56 @@
+[
+    {
+        "pergunta": "Como você avaliaria a experiência de compra no Mercado Livre em termos de facilidade de uso do site ou aplicativo?",
+        "respostas": [
+            "Muito fácil",
+            "Fácil",
+            "Moderadamente fácil",
+            "Difícil"
+        ]
+    },
+    {
+        "pergunta": "Qual é a sua opinião sobre a variedade de produtos disponíveis no Mercado Livre?",
+        "respostas": [
+            "Excelente",
+            "Boa",
+            "Aceitável",
+            "Insatisfatória"
+        ]
+    },
+    {
+        "pergunta": "Como você classificaria a eficiência da entrega dos produtos comprados no Mercado Livre?",
+        "respostas": [
+            "Rápida",
+            "Aceitável",
+            "Lenta",
+            "Muito lenta"
+        ]
+    },
+    {
+        "pergunta": "Em relação ao atendimento ao cliente do Mercado Livre, como você o descreveria?",
+        "respostas": [
+            "Excelente",
+            "Bom",
+            "Regular",
+            "Insatisfatório"
+        ]
+    },
+    {
+        "pergunta": "Como você avalia a precisão das descrições dos produtos no Mercado Livre?",
+        "respostas": [
+            "Muito precisa",
+            "Precisa",
+            "Moderadamente precisa",
+            "Imprecisa"
+        ]
+    },
+    {
+        "pergunta": "Considerando o custo dos produtos oferecidos, como você os classificaria em termos de valor pelo dinheiro no Mercado Livre?",
+        "respostas": [
+            "Excelente",
+            "Bom",
+            "Aceitável",
+            "Ruim"
+        ]
+    }
+]
