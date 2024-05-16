@@ -1,11 +1,10 @@
 [
     {
-        "pergunta": "Como você avaliaria a experiência de compra no Mercado Livre em termos de facilidade de uso do site ou aplicativo?",
-        "respostas": [
-            "Muito fácil",
-            "Fácil",
-            "Moderadamente fácil",
-            "Difícil"
+        "pergunta": Você está participando de uma ação beneficente da Magalu. Doaremos todo o dinheiro arrecadado ao Rio Grande do Sul. O que você acha do aplicativo Magalu?": [
+            "Bom aplicativo",
+            "Difícil de usar",
+            "Complexo demais",
+            "Perfeito"
         ]
     },
     {
